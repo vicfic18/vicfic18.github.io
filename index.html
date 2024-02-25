@@ -5,52 +5,80 @@
     <meta charset="utf-8">
     <title>VicFic's Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Nillionair, Philanthropist, Gamer">
+    <meta name="description" content="Nillionair, Thinker, Gamer">
     <style>
         /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
         */
+        :root {
+            --blue: #3590F3;
+            --green: #33FF69;
+        }
+
+
+        body {
+            color: #E0D3DE;
+            background: #262B2B
+        }
+
         body {
             max-width: 650px;
             margin: 40px auto;
             padding: 0 10px;
             font: 18px/1.5 -apple-system, "JetBrains Mono", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-            color: #070707
         }
 
-        h1 {
-            background: -webkit-linear-gradient(bottom right, #E6E2E0, #33FF69, #3590F3);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .mast {
+            border-image: -webkit-linear-gradient(bottom right, #33FF69, #3590F3) 30;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0.125rem;
+            border-style: solid;
+        }
 
+        h2,
+        h3 {
             line-height: 1.2
         }
 
-        h2, h3 {
-            line-height: 1.2
+        a:link {
+            color: #33FF69
         }
 
-        @media (prefers-color-scheme: dark) {
+        a:visited {
+            color: #3590F3
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --blue: #3590F3;
+                --green: #23CE6B;
+            }
+
             body {
-                color: #E6E2E0;
-                background: #070707
+                color: #262B2B;
+                background: #FFFBFE;
             }
 
             a:link {
-                color: #33FF69
+                color: var(--green)
             }
 
             a:visited {
-                color: #3590F3
+                color: var(--blue)
             }
         }
     </style>
 </head>
 
 <body>
-    <h1>Varghese K James</h1>
-    <em>Nillionare, </em><em style="color: #33FF69;"> Philanthropist,</em><em style="color: #3590F3;"> Gamer.</em>
-    <hr>
+    <div class="mast">
+        <h1 style="margin-bottom: 2px;">Varghese K James</h1>
+        <div class="tagline" style="margin-bottom: 10px;">
+            <em>Nillionare, </em><em style="color: var(--green);"> Thinker,</em><em style="color: var(--blue);">
+                Gamer.</em>
+        </div>
+    </div>
 
     <h2>About</h2>
     <p>I'm a Computer Science student with a deep interest in AI and Linux.
@@ -84,15 +112,28 @@
     my e mail address is vicfic[at]pm[dot]me
 
     <hr />
-    <p>Inspired by <a href="https://perfectmotherfuckingwebsite.com/">https://perfectmotherfuckingwebsite.com/</a>.</p>
+    <p>Inspired by <a href="https://perfectmotherfuckingwebsite.com/">this.</a>.</p>
 
     <p>This page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.
     </p>
 
     <a href="https://landchad.net" target="_blank">
-        <img src="https://landchad.net/pix/landchad.gif" alt="LandChad.net">
-    </a>
+        <img height="31" width="88" src="https://i.imgur.com/DO0FnLl.png" alt="LandChad.net"></a>
+
+
+    <a href="https://archlinux.org/" target="_blank">
+        <img height="31" width="88" src="https://i.imgur.com/QKDGqri.png" alt="bugswriter.com"></a>
+
+
+    <a href="https://nikhilmwarrier.codeberg.page/" target="_blank">
+        <img height="31" width="88" src="https://i.imgur.com/8MxCEHU.png" alt="nikhilmwarrier"></a>
+
+    <a href="https://www.bugswriter.com/" target="_blank">
+        <img height="31" width="88" src="https://i.imgur.com/l3Vr7Xn.png" alt="bugswriter.com"></a>
+
+
     <!-- https://coolors.co/070707-e6e2e0-3590f3-33ff69 -->
+    <!-- https://coolors.co/f15025-c2e812-0acdff-262b2b-e0d3de -->
 
 </body>
 
