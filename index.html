@@ -14,31 +14,21 @@
             --green: #33FF69;
         }
 
-
         body {
-            color: #E0D3DE;
-            background: #262B2B
+            color: #FFFAFF;
+            background: #0C090D
         }
 
         body {
             max-width: 650px;
             margin: 40px auto;
             padding: 0 10px;
-            font: 18px/1.5 -apple-system, "JetBrains Mono", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-
-        .mast {
-            border-image: -webkit-linear-gradient(bottom right, #33FF69, #3590F3) 30;
-            border-top: 0;
-            border-left: 0;
-            border-right: 0;
-            border-bottom: 0.125rem;
-            border-style: solid;
+            font: 18px/1.5 -apple-system, "JetBrains Mono", monospace, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
 
         h2,
         h3 {
-            line-height: 1.2
+             line-height: 1.2
         }
 
         a:link {
@@ -49,14 +39,33 @@
             color: #3590F3
         }
 
+        .barb {
+            height: 0.250rem;
+            background-image:
+                repeating-linear-gradient(
+                45deg,
+                #3590F3,
+                #33FF69 25%,
+                #3590F3 25%,
+                #33FF69 25%);
+            background-size: 200% 200%;
+            animation: barberpole 5s linear infinite;
+        }
+
+        @keyframes barberpole {
+            100% {
+                background-position: -100% 100%;
+            }
+        }
+
         @media (prefers-color-scheme: light) {
             :root {
                 --blue: #3590F3;
-                --green: #23CE6B;
+                --green: #00B831;
             }
 
             body {
-                color: #262B2B;
+                color: #0C090D;
                 background: #FFFBFE;
             }
 
@@ -72,12 +81,15 @@
 </head>
 
 <body>
-    <div class="mast">
+    <header>
         <h1 style="margin-bottom: 2px;">Varghese K James</h1>
         <div class="tagline" style="margin-bottom: 10px;">
             <em>Nillionare, </em><em style="color: var(--green);"> Thinker,</em><em style="color: var(--blue);">
                 Gamer.</em>
         </div>
+    </header>
+
+    <div class="barb">
     </div>
 
     <h2>About</h2>
@@ -109,32 +121,37 @@
             — Contains stuff.</li>
     </ul>
     <h2>Contact</h2>
-    my e mail address is vicfic[at]pm[dot]me
+    <p>
+        my e mail address is vicfic[at]pm[dot]me <br>
+        my discord <a href="https://discord.gg/34JwHgzPbG">server</a>.
 
-    <hr />
-    <p>Inspired by <a href="https://perfectmotherfuckingwebsite.com/">this.</a>.</p>
-
-    <p>This page is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.
     </p>
 
-    <a href="https://landchad.net" target="_blank">
-        <img height="31" width="88" src="https://i.imgur.com/DO0FnLl.png" alt="LandChad.net"></a>
+    <footer class="boop">
+        <hr>
+        <p>This page is licensed under
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC BY-SA 4.0</a>.
+        </p>
+        Some cool websites: <br>
+        <a class="badge" href="https://landchad.net" target="_blank">
+            <img height="31" width="88" src="https://i.imgur.com/DO0FnLl.png" alt="LandChad.net"></a>
 
 
-    <a href="https://archlinux.org/" target="_blank">
-        <img height="31" width="88" src="https://i.imgur.com/QKDGqri.png" alt="bugswriter.com"></a>
+        <a class="badge" href="https://archlinux.org/" target="_blank">
+            <img height="31" width="88" src="https://i.imgur.com/QKDGqri.png" alt="bugswriter.com"></a>
 
 
-    <a href="https://nikhilmwarrier.codeberg.page/" target="_blank">
-        <img height="31" width="88" src="https://i.imgur.com/8MxCEHU.png" alt="nikhilmwarrier"></a>
+        <a class="badge" href="https://nikhilmwarrier.codeberg.page/" target="_blank">
+            <img height="31" width="88" src="https://i.imgur.com/8MxCEHU.png" alt="nikhilmwarrier"></a>
 
-    <a href="https://www.bugswriter.com/" target="_blank">
-        <img height="31" width="88" src="https://i.imgur.com/l3Vr7Xn.png" alt="bugswriter.com"></a>
+        <a class="badge" href="https://www.bugswriter.com/" target="_blank">
+            <img height="31" width="88" src="https://i.imgur.com/l3Vr7Xn.png" alt="bugswriter.com"></a>
 
+        & <a href="https://perfectmotherfuckingwebsite.com/">this.</a>
 
-    <!-- https://coolors.co/070707-e6e2e0-3590f3-33ff69 -->
-    <!-- https://coolors.co/f15025-c2e812-0acdff-262b2b-e0d3de -->
-
+        <!-- https://coolors.co/070707-e6e2e0-3590f3-33ff69 -->
+        <!-- https://coolors.co/f15025-c2e812-0acdff-262b2b-e0d3de -->
+    </footer>
 </body>
 
 </html>
