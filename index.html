@@ -14,15 +14,52 @@
             --green: #33FF69;
         }
 
-        body {
-            color: #FFFAFF;
-            background: #0C090D
+        body:before, body:after {
+            content: "";
+            position: fixed;
+            background: #000;
+            left: 0;
+            right: 0;
+            height: 2px;
+        }
+        body:before {
+            top: 0;
+        }
+        body:after {
+            bottom: 0;
         }
 
         body {
-            max-width: 650px;
-            margin: 40px auto;
-            padding: 0 10px;
+            color: #FFFAFF;
+
+            background: black;
+            background-image: radial-gradient(#5a5a5a 1px, transparent 0);
+            background-size: 40px 40px;
+            background-position: -19px -19px;
+            background-attachment: fixed;
+
+        }
+
+        article {
+            background: #141414;
+            padding-top: 2rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            padding-bottom: 2rem;
+        }
+        @media all and (max-width: 777px) {            
+            article {
+                padding: 1rem;
+            }
+        }
+
+
+        body {
+            max-width: 45em;
+            margin-right: auto;
+            margin-left: auto;
+
+            /* padding: 0 10px; */
             font: 18px/1.5 -apple-system, "JetBrains Mono", monospace, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
 
@@ -77,12 +114,18 @@
                 color: var(--blue)
             }
         }
+
+        footer {
+            font-size: small;
+        }
+
     </style>
 </head>
 
 <body>
+    <article >
     <header>
-        <h1 style="margin-bottom: 2px;">Varghese K James</h1>
+        <h1 style="margin-bottom: 2px; margin-top: 0px;">Varghese K James</h1>
         <div class="tagline" style="margin-bottom: 10px;">
             <em>Nillionare, </em><em style="color: var(--green);"> Thinker,</em><em style="color: var(--blue);">
                 Gamer.</em>
@@ -93,20 +136,28 @@
     </div>
 
     <h2>About</h2>
-    <p>I'm a Computer Science student with a deep interest in AI and Linux.
+    <p>
+        I'm a Computer Science student with a deep interest in AI and Linux.
         I'm very quick to make a script which can automate away mundane tasks that people will
         still do manually.
+        I'm a rationalist who likes to have a philosophical understanding of the world.
     </p>
     <blockquote>
         <p>“Smart work always beats hard work.”</p>
     </blockquote>
 
+    <p>
+        I have a <a href="https://vicfic.neocities.org/blog/">blogsite</a> where I sometimes write stuff.
+        <br>
+        I'm open to work on interesting projects, e.g full-stack apps, web-scraping, setting up unix servers etc.
+    </p>
+
     <h2>Projects</h2>
     <ul>
         <li><a href="/zerohide/"><b>ZeroHide</b></a>
             — Zero width charector based text steganography.</li>
-        <li><a href="https://vicfic.serveo.net/"><b>Pi Server</b></a>
-            — Self hosted web services on Raspberry Pi 3 B. (likely offline)</li>
+        <!-- <li><a href="https://vicfic.serveo.net/"><b>Pi Server</b></a>
+            — Self hosted web services on Raspberry Pi 3 B. (likely offline)</li> -->
         <li><a href="https://www.youtube.com/@vicfic_"><b>VicFic!</b></a>
             — A YT channel about making servers and #linuxlife</li>
         <li><a href="https://www.youtube.com/@ShortTalesofReddit"><b>ShortTales</b></a>
@@ -154,6 +205,7 @@
         <!-- https://coolors.co/070707-e6e2e0-3590f3-33ff69 -->
         <!-- https://coolors.co/f15025-c2e812-0acdff-262b2b-e0d3de -->
     </footer>
+    </article>
 </body>
 
 </html>
